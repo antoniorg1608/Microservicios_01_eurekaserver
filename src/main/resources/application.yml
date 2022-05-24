@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bootcamp-eureka-server
+server:
+  port: 8761
+eureka:
+  # Evitar aviso EMERGENCY! EUREKA MAY BE INCORRECTLY CLAIMING INSTANCES ARE UP WHEN THEY'RE NOT...
+  server:
+    enableSelfPreservation: false
+  # Impedimos que Eureka se registre a si misma
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
